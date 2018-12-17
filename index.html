@@ -17,33 +17,39 @@
   <div class="container">
     <h1>🎲PIG DICE🎲</h1>
     <div class="well">
-      <h2>instructions</h2>
+      <h2>Instructions</h2>
       <ol>
         <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li><br>
         <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li><br>
         <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li><br>
       </ol>
     </div>
-    <div class="row">
-      <div class="col-md-6">
-        <p>
-          <div class="player">
-            <h3> Player 1</h3>
+      <div class="well">
+        <div class="row">
+          <div class="col-md-6">
+            <p>
+              <div class="player">
+                <h3> Player 1</h3>
+              </div>
+            </p>
+            <p> <span class="score">  Score:</span></p>
+            <input type="display" name="" value="" id="score1"><br><br>
+            <input type="button" name="roll" value="Roll" id="roll1"><br><br>
+            <input type="button" name="HOLD" value="HOLD" id="hold">
           </div>
-        </p>
-        <p span="score">score</p>
-        <input type="display" name="" value="" id="score1">
+          <div class="col-md-6">
+              <p>
+                <div class="player">
+                  <h3>Player 2</h3>
+                </div>
+              </p>
+                <p> <span class="score">  Score: </span></p>
+                <input type="display" name="" value="" id="score2"><br><br>
+                <input type="button" name="roll" value="Roll" id="roll2"><br><br>
+                <input type="button" name="HOLD" value="HOLD" id="hold">
+          </div>
+        </div>
       </div>
-      <div class="col-md-6">
-          <p>
-            <div class="player">
-              <h3>Player 2</h3>
-            </div>
-          </p>
-            <p span="score">score</p>
-            <input type="display" name="" value="" id="score2">
-      </div>
-    </div>
     <div class="box">
       <input type="button" name="clear" onClick="refresh" id="clear" >
     </div>
