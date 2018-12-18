@@ -2,6 +2,7 @@ h1{
   font-display:auto;
   font-size: 55px;
   color: white;
+  text-align: center;
 
 }
 h2{
@@ -55,6 +56,20 @@ h3{
     font-weight: bold;
     background-color: transparent;
 }
+#diceroll1{
+  border-radius: 5px;
+  width: 150px;
+  border: 3px solid black;
+  height: 60px;
+  color: black;
+}
+#diceroll2{
+  border-radius: 5px;
+  width: 150px;
+  border: 3px solid black;
+  height: 60px;
+  color: black;
+}
 .container{
   background-color: black;
 }
@@ -63,7 +78,7 @@ h3{
   border: 8px solid black;
   padding: 20px;
   margin: 20px;
-  background-color: white;
+  background-color: grey;
   width: inherit;
   border-radius: 5px;
 
