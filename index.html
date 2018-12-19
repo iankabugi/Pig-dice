@@ -1,62 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Pig Dice</title>
-  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-  <link rel="stylesheet" href="css/styles.css" type="text/css">
-  <script type="text/javascript" src="js/jquery-3.3.1.js">
-  <script type="text/javascript" src="js/scripts.js">
-
-
-  </script>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css" <title>Pig Dice</title>
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
 </head>
+
 <body>
   <div class="container">
     <h1>🎲PIG DICE🎲</h1>
     <div class="well">
       <h2>Instructions</h2>
       <ol>
-        <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li><br>
+        <li>If the player rolls a 1, they scoreOne nothing and it becomes the next player's turn.</li><br>
         <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li><br>
         <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li><br>
-      </ol>
+              </ol>
     </div>
-      <div class="well">
+    <div class="menu container">
+      <div class="jumbotron">
+        <h1>Roll the dice</h1>
+
+        <form id="playerOne">
+          <div class="form-group">
+            <label for="firstPlayer">Player 1 Name:</label>
+            <input required class="firstPlayer" type="text">
+            </div>
+        </form><br><br>
+
+        <form id="playerTwo">
+          <div class="form-group">
+            <label for="secondPlayer">Player 2 Name:</label>
+            <input required class="secondPlayer" type="text">
+            </div>
+        </form><br><br>
+        <button id="start">Launch Game</button>
+      </div>
+    </div>
+
+    <div class="console container">
+      <div class="box">
         <div class="row">
-          <div class="col-md-6">
-            <p>
-              <div class="player">
-                <h3> Player 1</h3>
-              </div>
-            </p>
-            <p> <span class="score">  Score:</span></p>
-            <input type="display" name="" value="" id="score1"><br><br>
-            <input type="button" name="roll" value="Roll" id="roll1"><br><br>
-            <input type="display" name="diceroll1" placeholder="Diceroll" id="diceroll1"><br><br>
-            <input type="button" name="HOLD" value="HOLD" id="hold">
-          </div>
-          <div class="col-md-6">
-              <p>
-                <div class="player">
-                  <h3>Player 2</h3>
-                </div>
-              </p>
-                <p> <span class="score">  Score: </span></p>
-                <input type="display" name="" value="" id="score2"><br><br>
-                <input type="button" name="roll" value="Roll" id="roll2"><br><br>
-                <input type="display" name="diceroll2" placeholder="Diceroll" id="diceroll2"><br><br>
-                <input type="button" name="HOLD" value="HOLD" id="hold">
+          <div class="well">
+
+
+            <div class="col-md-6">
+              <h3>Player 1: <span id = "firstPlayer"><span></h3>
+              <button id="roll1" class="">Roll</button>
+              <button id="player1-hold" class="">Hold</button>
+              <h4>Dice Roll: <span id="rolldice1"></span></h4>
+              <p>Round Total: <span id="diceTotal"></span></p>
+              <p>Total scoreOne: <span id="scoreOne"></span></p>
+            </div>
+
+            <div class="col-md-6">
+              <h3>Player 2: <span id = "secondPlayer"><span></h3>
+              <button id="roll2" class="">Roll</button>
+              <button id="hold1" class="">Hold</button>
+              <h4>Dice Roll: <span id="rollDice2"></span></h4>
+              <p>Round Total: <span id="diceTotal"></span></p>
+              <p>Total score: <span id="scoreTwo"></span></p>
+            </div>
           </div>
         </div>
       </div>
-    <div class="box">
-      <button type="button" class="refresh"><a href="index.html">Refresh</a></button>
     </div>
-
   </div>
-
 </body>
+
 </html>

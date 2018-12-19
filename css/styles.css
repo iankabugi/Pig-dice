@@ -17,13 +17,13 @@ h3{
   font-size: 40px;
   font-weight: bolder;
 }
-#roll1{
+/*#roll1{
   border: 3px solid black;
   border-radius: 5px;
   width: 150px;
   height: 50px;
   font-weight: bold;
-  background-color: transparent;
+  background-color: transparent;*/
 }
 #roll2{
   border: 3px solid black;
@@ -74,6 +74,16 @@ h3{
   border-radius: 5px;
 
 }
+.box{
+  background-color: grey;
+  border: 8px solid black;
+  padding: 20px;
+  margin: 20px;
+  background-color: white;
+  width: inherit;
+  border-radius: 5px;
+
+}
 
 .player{
   color: black;
@@ -88,5 +98,8 @@ h3{
 
 }
 html{
-  background-color: yellow;
+  background-color: blue;
+}
+btn-primary{
+  width: 80px;
 }
